@@ -1,6 +1,5 @@
 {
     "require": {
-        "typo3/cms-adminpanel": "^12.4",
         "typo3/cms-backend": "^12.4",
         "typo3/cms-belog": "^12.4",
         "typo3/cms-beuser": "^12.4",
@@ -33,7 +32,8 @@
         "typo3/cms-webhooks": "^12.4",
         "typo3/cms-workspaces": "^12.4",
         "typo3/minimal": "^12",
-        "toumeh/vt12": "@dev"
+        "toumeh/vt12": "@dev",
+        "typo3/cms-adminpanel": "^12.4"
     },
     "config": {
         "allow-plugins": {
