@@ -1,0 +1,7 @@
+# Default PAGE object:
+
+page = PAGE 
+page {
+  10 = HMENU
+  20 < styles.content.get  
+}

@@ -1,0 +1,14 @@
+base: 'https://typo3demo.ddev.site/'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 0
+    base: /
+    locale: de_DE
+    navigationTitle: DR
+    flag: de
+    hreflang: ''
+    websiteTitle: ''
+rootPageId: 12
+websiteTitle: ''
