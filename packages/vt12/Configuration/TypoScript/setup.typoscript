@@ -1,3 +1,1 @@
-page = PAGE
-page.10 = TEXT
-page.10.value = es funktioniert'
+@import "EXT:vt12/Configuration/TypoScript/Setup/*.typoscript"
