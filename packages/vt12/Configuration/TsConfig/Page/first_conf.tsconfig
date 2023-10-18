@@ -1,6 +1,6 @@
 mod.web_layout.BackendLayouts {
-    withHeader {
-        title = second Try
+    layoutwithheader {
+        title = layout num 1
         # icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
         config {
             backend_layout {
@@ -28,3 +28,27 @@ mod.web_layout.BackendLayouts {
         }
     }
 }
+
+mod.web_layout.BackendLayouts {
+    Fayoutwithoutheader {
+        title = layout num 2
+        # icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 2
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = normal
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

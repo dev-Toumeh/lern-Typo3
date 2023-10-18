@@ -9,19 +9,38 @@ page.includeCSS {
     bootstrap-icons = https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css
     bootstrap-icons.external = 1
     styles = EXT:vt12/Resources/Public/css/styles.css
+    custom = https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css
+
 }
 
 page.includeJSFooter {
         bootstrap-bundel = https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
         bootstrap-bundel.external = 1
-        javascriptFile = EXT:vt12/Resources/Public/Javascript/scripts.js
+       # javascriptFile = EXT:vt12/Resources/Public/css/custom.css
 }
 page.shortcutIcon = EXT:vt12/Resources/Public/Icons/favicon.ico
 page.10 {
     layoutRootPath = EXT:vt12/Resources/Private/Layouts/
-    file = EXT:vt12/Resources/Private/Templates/Default.html
+    #file = EXT:vt12/Resources/Private/Templates/Default.html
+    file.stdWrap.cObject = CASE
+    file.stdWrap.cObject {
+        key.data = pagelayout
+
+        pagets__layoutwithheader = TEXT
+        pagets__layoutwithheader.value = EXT:vt12/Resources/Private/Templates/Default.html
+
+        pagets__layoutwithoutheader = TEXT
+        pagets__layoutwithoutheader.value = EXT:vt12/Resources/Private/Templates/WithoutHeader.html
+
+        default < .pagets__layoutwithheader
+    }
     variables {
         content0 = TEXT
         content0 < styles.content.get
+
+        content1 < styles.content.get
+        content1 {
+            select.where = {#colPos} = 1
+        }
     }
 }
