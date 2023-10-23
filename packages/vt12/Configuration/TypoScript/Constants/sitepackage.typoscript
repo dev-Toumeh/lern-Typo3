@@ -1,0 +1,8 @@
+vt12 {
+   rootUid = 12
+   logoFile = EXT:vt12/Resources/Public/Icons/my_logo.png
+   logoAlt = Logo typo3-lern
+   logoTitle = to Start Site
+
+   copyrightText = Copyright &copy my Company
+}

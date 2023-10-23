@@ -3,7 +3,17 @@ page.10.dataProcessing {
     10 {
         as = mainMenu
         levels = 2
-        titleField = nav_title // title
+        titleField = subtitle // nav_title // title
     }
 
+    ## Meta Navigation
+
+    20 = menu
+    20 {
+        as = metaNav
+        special = directory
+        special.value = 19
+        levels = 1
+        titleField = subtitle // nav_title // title
+    }
 }

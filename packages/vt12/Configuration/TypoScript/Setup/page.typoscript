@@ -44,4 +44,11 @@ page.10 {
             select.where = {#colPos} = 1
         }
     }
+
+    settings {
+        rootUid = {$vt12.rootUid}
+        logoFile = {$vt12.logoFile}
+        logoAlt = {$vt12.logoAlt}
+        logoTitle = {$vt12.logoTitle}}
+    }
 }
