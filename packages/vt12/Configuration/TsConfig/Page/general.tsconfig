@@ -1,0 +1,17 @@
+TCEFORM {
+    tt_content {
+        header_layout {
+            altLabels {
+                1 = h1 SeitenÜberschrift
+                2 = h2 ThemenÜberschrift
+                3 = h3 überschrift größe 3
+                4 = h4 überschrift größe 4
+                5 = h5 überschrift größe 5
+            }
+            removeItems = 0
+            addItems {
+                200 = h1 with custom css
+            }
+        }
+    }
+}

@@ -16,4 +16,13 @@ page.10.dataProcessing {
         levels = 1
         titleField = subtitle // nav_title // title
     }
+
+    30 = menu
+    30 {
+        as = rootline
+        special = rootline
+        special.range = 0|-1
+        titleField = subtitle // nav_title // title
+        includeNotInMenu = 1
+    }
 }

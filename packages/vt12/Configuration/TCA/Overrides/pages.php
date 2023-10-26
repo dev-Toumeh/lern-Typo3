@@ -8,3 +8,8 @@ ExtensionManagementUtility::registerPageTSConfigFile(
     'vt12',
     'Configuration/TsConfig/Page/first_conf.tsconfig',
     'Default Backendlayouts');
+
+ExtensionManagementUtility::registerPageTSConfigFile(
+    'vt12',
+    'Configuration/TsConfig/Page/general.tsconfig',
+    'General Page TsConfiguration');
